@@ -18,7 +18,7 @@
 (SET_COLOR)         { printf("SET_COLOR\n");}
 [0-9]+              { printf("DIGIT\n"); }
 [0-9]+"."[0-9]+     { printf("FLOAT\n"); }
-[ \t\n]+            ; // Ignore these chars!
+[ |\t|\n]+          ; // Ignore these chars!
 .                   { printf("UNLISTED\n");}
 %%
 
